@@ -2,13 +2,26 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
+    "outDir": "dist",
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "./*"
+      ]
+    },
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-  }
+  },
+  "include": [
+    "src/**/*",
+    "scripts/**/*"
+  ]
 }

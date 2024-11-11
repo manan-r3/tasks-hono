@@ -1,5 +1,5 @@
 import { OpenAPIHono } from "@hono/zod-openapi";
-import prisma from "../../utils/database.js";
+import prisma from "../../libs/prisma.js";
 import {
   createTask,
   deleteTask,

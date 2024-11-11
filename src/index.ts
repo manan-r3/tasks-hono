@@ -3,7 +3,7 @@ import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { logger } from "hono/logger";
 import { prettyJSON } from "hono/pretty-json";
-import tasksHandler from "./modules/tasks/tasksHandlers.js";
+import tasksHandler from "@/modules/tasks/tasksHandlers";
 
 const app = new OpenAPIHono();
 
